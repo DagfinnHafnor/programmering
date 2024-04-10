@@ -73,20 +73,36 @@
   }
 
   /**
-   * Back to top button
+   * right-arrow-button
    */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
+  let rightarrowbutton = select('.right-arrow-button')
+  if (rightarrowbutton) {
+    const togglerightarrowbutton = () => {
       if (window.scrollY > 100) {
-        backtotop.classList.add('active')
+        rightarrowbutton.classList.add('active')
       } else {
-        backtotop.classList.remove('active')
+        rightarrowbutton.classList.remove('active')
       }
     }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
+    window.addEventListener('load', togglerightarrowbutton)
+    onscroll(document, togglerightarrowbutton)
   }
+
+    /**
+   * left-arrow-button
+   */
+    let leftarrowbutton = select('.left-arrow-button')
+    if (leftarrowbutton) {
+      const toggleleftarrowbutton = () => {
+        if (window.scrollY > 100) {
+          leftarrowbutton.classList.add('active')
+        } else {
+          leftarrowbutton.classList.remove('active')
+        }
+      }
+      window.addEventListener('load', toggleleftarrowbutton)
+      onscroll(document, toggleleftarrowbutton)
+    }
 
   /**
    * Mobile nav toggle
