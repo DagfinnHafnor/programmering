@@ -78,7 +78,7 @@
   let rightarrowbutton = select('.right-arrow-button')
   if (rightarrowbutton) {
     const togglerightarrowbutton = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 10) {
         rightarrowbutton.classList.add('active')
       } else {
         rightarrowbutton.classList.remove('active')
@@ -94,7 +94,7 @@
     let leftarrowbutton = select('.left-arrow-button')
     if (leftarrowbutton) {
       const toggleleftarrowbutton = () => {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 10) {
           leftarrowbutton.classList.add('active')
         } else {
           leftarrowbutton.classList.remove('active')
