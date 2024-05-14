@@ -48,22 +48,30 @@
 
       <div class="profile">
         <img id="bilde" src="assets/img/profile-img.jpg" alt="Bilde" class="img-fluid rounded-circle">
-        <h1 id="overskrift" class="text-light"><a href="index8.html">Programmering 8</a></h1>
+        <h1 id="overskrift" class="text-light"><a href="index8.html">Programmering</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="8-trinn/side81.html" class="8-trinn hover-trigger" ><i class="bi bi-1-circle"></i></a>
-          <a href="9-trinn/side91.html" class="9-trinn hover-trigger" onmouseover="endreInnhold('Programmering 9', 'assets/img/profile-img.jpg')" onmouseout="tilbakestillInnhold()"><i class="bi bi-2-circle"></i></a>
-          <a href="10-trinn/side101.html" class="10-trinn hover-trigger" onmouseover="endreInnhold('Programmering 10', 'assets/img/profile-img.jpg')" onmouseout="tilbakestillInnhold()"><i class="bi bi-3-circle"></i></a>
-          <a href="eksamenstrening/side1e.html" class="Eksamenstrening hover-trigger" onmouseover="endreInnhold('Eksamenstrening', 'assets/img/profile-img.jpg')" onmouseout="tilbakestillInnhold()"><i class="bi bi-exclamation-circle"></i></a>
-          <a href="informasjon.html" class="Programmering hover-trigger" onmouseover="endreInnhold('Informasjon', 'assets/img/profile-img.jpg')" onmouseout="tilbakestillInnhold()"><i class="bi bi-info-circle"></i></a>
+          <a href="../8-trinn/side81.html" class="8-trinn hover-trigger"  onmouseover="endreInnhold('Programmering 8', 'assets/img/profile-img.jpg')" onmouseout="tilbakestillInnhold()"><i class="bi bi-1-circle"></i></a>
+          <a href="../9-trinn/side91.html" class="9-trinn hover-trigger" onmouseover="endreInnhold('Programmering 9', 'assets/img/profile-img.jpg')" onmouseout="tilbakestillInnhold()"><i class="bi bi-2-circle"></i></a>
+          <a href="../10-trinn/side101.html" class="10-trinn hover-trigger" onmouseover="endreInnhold('Programmering 10', 'assets/img/profile-img.jpg')" onmouseout="tilbakestillInnhold()"><i class="bi bi-3-circle"></i></a>
+          <a href="../eksamenstrening/side1e.html" class="Eksamenstrening hover-trigger" onmouseover="endreInnhold('Eksamenstrening', 'assets/img/profile-img.jpg')" onmouseout="tilbakestillInnhold()"><i class="bi bi-exclamation-circle"></i></a>
         </div>
       </div>
+      <nav id="navbar" class="nav-menu navbar"><!-- .nav-menu -->
+        <ul>
+          <li><a href="index.html" class="nav-link scrollto active"><i class="bi bi-info-circle"></i> <span>Informasjon</span></a></li>
+          <li><a href="8-trinn/side81.html" class="nav-link scrollto"><i class="bi bi-1-circle"></i> <span>Kurs del 1</span></a></li>
+          <li><a href="9-trinn/side91.html" class="nav-link scrollto"><i class="bi bi-2-circle"></i> <span>Kurs del 2</span></a></li>
+          <li><a href="10-trinn/side101.html" class="nav-link scrollto"><i class="bi bi-3-circle"></i> <span>Kurs del 3</span></a></li>
+          <li><a href="eksamenstrening/side1e.html" class="nav-link scrollto"><i class="bi bi-exclamation-circle"></i> <span>4. Eksamenstrening</span></a></li>
+        </ul>
+      </nav><!-- End .nav-menu -->
     </div>
   </header><!-- End Header -->
 
   <!-- ======= landingPage ======= -->
   <section id="landingPage" class="d-flex flex-column justify-content-center align-items-center">
     <div class="landingPage-container" data-aos="fade-in">
-      <h1>Programmering</h1>
+      <h1>Programmer</h1>
       <p>- <span class="typed" data-typed-items="Python, Simmulering, Algoritmer"></span></p>
     </div>
   </section><!-- End landingPage -->
@@ -111,7 +119,7 @@
     });
   </script>
   <script>
-    var originalOverskrift = 'Programmering 8';
+    var originalOverskrift = 'Programmering';
 
     function endreInnhold(nyOverskrift, bildeSrc) {
         document.getElementById('bilde').src = bildeSrc;
